@@ -19,7 +19,7 @@ services:
   postgresql:
     build:
       context: "./bin/${DATABASE}"
-    container_name: 'postgresql-13'
+    container_name: 'postgresql-9.5'
     restart: 'always'
     ports:
       - "${HOST_MACHINE_POSTGRESQL_PORT}:5432"

@@ -18,7 +18,7 @@ RUN apt-get -y update && \
 dialog \
 libsqlite3-dev \
 libsqlite3-0 && \
-    apt-get -y --no-install-recommends install default-mysql-client \
+    apt-get -y --no-install-recommends install libpq-dev \ 
 zlib1g-dev \
 libzip-dev \
 libicu-dev && \
@@ -52,7 +52,7 @@ RUN command -v npm
 
 # Other PHP7 Extensions
 
-RUN docker-php-ext-install pdo_pgsql && \
+RUN docker-php-ext-install pdo pdo_pgsql pgsql && \
     docker-php-ext-install pdo_sqlite && \
     docker-php-ext-install pgsql && \
     docker-php-ext-install curl && \

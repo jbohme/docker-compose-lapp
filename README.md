@@ -4,7 +4,7 @@ This is a basic LAPP stack environment built using Docker Compose. It consists f
 
 * PHP 7.4
 * Apache 2.4
-* PostgreSQL 13.0
+* PostgreSQL 9.5
 * Redis
 
 ## Installation
