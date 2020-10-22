@@ -91,9 +91,9 @@ The installed version of PHP is 7.4
 
 By default following extensions are installed.
 
-* mysqli
+* pgsql
 * pdo_sqlite
-* pdo_mysql
+* pdo_pgsql
 * mbstring
 * zip
 * intl
